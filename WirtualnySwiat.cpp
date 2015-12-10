@@ -14,7 +14,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	srand(time(NULL));
 	Swiat *swiat1 = new Swiat();
 
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		swiat1->wykonajTure();
 		swiat1->mapa();

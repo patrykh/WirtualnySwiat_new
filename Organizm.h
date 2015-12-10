@@ -10,6 +10,7 @@ protected:
 	int czasZycia = 1;
 	bool czyZyje = true;
 	int polozenieX = 0, polozenieY = 0; // po³o¿enie
+	int newPolozenieX = 0, newPolozenieY = 0;
 	std::string gatunek;
 	Swiat* swiat = nullptr;
 public:
@@ -24,15 +25,18 @@ public:
 
 	//Pozycja
 	void setPozycja(int x, int y);
+	void setNewPozycjaXY(int _newPozycjaX, int _newPozycjaY);
 	//Organizm* czyKolizja(int polozenieX, int polozenieY);
+	int getPozX()			{ return this->polozenieX; }
+	int getPozY()			{ return this->polozenieY; }
+	int getSila()			{ return this->sila; }
+	bool getCzyZyje()		{ return this->czyZyje; };
+	int getInicjatywa()		{ return this->inicjatywa; };
+	int getWiek()			{ return this->czasZycia; };
+	int getNewPolozenieX()	{ return this->newPolozenieX; };
+	int getNewPolozenieY()	{ return this->newPolozenieY; };
 
-	int getPozX()		{ return this->polozenieX; }
-	int getPozY()		{ return this->polozenieY; }
-	int getSila()		{ return this->sila; }
-	bool getCzyZyje()	{ return this->czyZyje; };
-	int getInicjatywa()	{ return this->inicjatywa; };
-	int getWiek()		{ return this->czasZycia; };
-	
+	void pozycjaNastepnegoRuchu(int wymiarX, int wymiarY);
 	Organizm(Swiat* swiat);
 	virtual ~Organizm();
 };

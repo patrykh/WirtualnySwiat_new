@@ -7,7 +7,7 @@ class Leniwiec :
 public:
 	int blokada = 0;
 	char getSymbol() override;
-	void akcja(int wymiarX, int wymiarY) override; 
+	void akcja(int wymiarX, int wymiarY) override;
 	Leniwiec(Swiat* swiat, int pozycjaX, int pozycjaY);
 	~Leniwiec();
 };

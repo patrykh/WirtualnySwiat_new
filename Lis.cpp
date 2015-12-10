@@ -2,7 +2,17 @@
 
 void Lis::akcja(int wymiarX, int wymiarY)
 {
-	swiat->czyKolizja(polozenieX, polozenieY);
+
+	this->pozycjaNastepnegoRuchu(wymiarX, wymiarY);
+	if (this->getSila() > swiat->czyKolizja(newPolozenieX, newPolozenieY)->getSila())
+	{
+
+		Zwierze::akcja(wymiarX, wymiarY);
+	} else
+	{
+		std::cout << "Lis to cwaniak ;)";
+	}
+
 }
 
 char Lis::getSymbol()

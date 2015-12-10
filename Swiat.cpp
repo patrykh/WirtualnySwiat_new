@@ -4,6 +4,7 @@
 #include "Wilk.h"
 #include "Owca.h"
 #include "Leniwiec.h"
+#include "Lis.h"
 
 using namespace std;
 
@@ -33,7 +34,9 @@ void Swiat::dodajOrganizmy(Organizm* nowyOrganizm)
 
 void Swiat::listaOrganizmow()
 {
-	this->dodajOrganizmy(new Leniwiec(this, 10, 6));
+	this->dodajOrganizmy(new Lis(this, 10, 6));
+	this->dodajOrganizmy(new Wilk(this, 9, 6));
+
 	/*this->dodajOrganizmy(new Owca(this, 2, 5));
 	this->dodajOrganizmy(new Wilk(this, 8, 9));
 	this->dodajOrganizmy(new Wilk(this, 15, 9));
@@ -60,6 +63,7 @@ void Swiat::wykonajTure()//int numerTury)
 		if (organizm->getCzyZyje())
 		{
 			cout << "wykonajTure_if";
+			organizm->pozycjaNastepnegoRuchu(wymiarX, wymiarY);
 			organizm->akcja(wymiarX, wymiarY);
 		}
 	}

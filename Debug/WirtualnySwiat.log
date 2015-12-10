@@ -1,26 +1,12 @@
-﻿Build started 2015-12-10 22:47:05.
-     1>Project "F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\WirtualnySwiat\WirtualnySwiat.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2015-12-11 00:11:56.
+     1>Project "f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\WirtualnySwiat\WirtualnySwiat.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Jez.cpp Koka.cpp Leniwiec.cpp Lis.cpp Organizm.cpp Owca.cpp Roslina.cpp Swiat.cpp Trawa.cpp WilczeJagody.cpp Wilk.cpp WirtualnySwiat.cpp Zwierze.cpp
-         Jez.cpp
-     1>f:\documents\visual studio 2013\projects\języki programowania obiektowego\wirtualnyswiat\wirtualnyswiat\jez.cpp(12): warning C4305: 'argument' : truncation from 'int' to 'char'
-     1>f:\documents\visual studio 2013\projects\języki programowania obiektowego\wirtualnyswiat\wirtualnyswiat\jez.cpp(12): warning C4309: 'argument' : truncation of constant value
-         Generating Code...
-         Skipping... (no relevant changes detected)
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Zwierze.cpp
          Zwierze.cpp
-         WirtualnySwiat.cpp
-         Wilk.cpp
-         WilczeJagody.cpp
-         Trawa.cpp
-         Swiat.cpp
-         Roslina.cpp
-         Owca.cpp
-         Organizm.cpp
-         Lis.cpp
-         Leniwiec.cpp
-         Koka.cpp
+     1>f:\documents\visual studio 2013\projects\języki programowania obiektowego\wirtualnyswiat\wirtualnyswiat\zwierze.cpp(18): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>f:\documents\visual studio 2013\projects\języki programowania obiektowego\wirtualnyswiat\wirtualnyswiat\zwierze.cpp(19): warning C4553: '==' : operator has no effect; did you intend '='?
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.lib" /MACHINE:X86 Debug\ekran.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.lib" /MACHINE:X86 Debug\ekran.obj
          Debug\Jez.obj
          Debug\Koka.obj
          Debug\Leniwiec.obj
@@ -36,9 +22,9 @@
          Debug\Wilk.obj
          Debug\WirtualnySwiat.obj
          Debug\Zwierze.obj
-         WirtualnySwiat.vcxproj -> F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.exe
-     1>Done Building Project "F:\Documents\Visual Studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\WirtualnySwiat\WirtualnySwiat.vcxproj" (Build target(s)).
+         WirtualnySwiat.vcxproj -> f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\Debug\WirtualnySwiat.exe
+     1>Done Building Project "f:\documents\visual studio 2013\Projects\Języki programowania obiektowego\WirtualnySwiat\WirtualnySwiat\WirtualnySwiat.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.79
+Time Elapsed 00:00:01.09

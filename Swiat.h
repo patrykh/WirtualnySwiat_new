@@ -24,6 +24,7 @@ public:
 	void sortujOrganizmy();
 	void usunMartweOrganizmy();
 	void mapa();
+	
 
 
 	Organizm* czyKolizja(int polozenieX,int polozenieY);

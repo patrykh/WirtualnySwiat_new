@@ -5,75 +5,49 @@
 
 void Zwierze::akcja(int wymiarX, int wymiarY)
 {
-	std::cout << "akcja1";
-	const int ruchy[2] = { -1, 1 }; 
-	const char kierunek[2] = { 'x', 'y' };
+	
+	std::cout << " akcja_start ";
 	Organizm* przeciwnik; 
-	int index = 0;
-	int ruch = 0;
-
 	bool czyRuszyl = false;
 	int proba = 1;
-
-	//polozenie organizmu
-	int _polozenieX = polozenieX; 
-	int	_polozenieY = polozenieY;
-	//int wymiarX = swiat->getRozmiarX();
-	std::cout << "akcja2";
-	//int wymiarY = swiat->getRozmiarY();
-	std::cout << "akcja3";
-
-	index = (rand() % 2);
-	ruch = ruchy[index];
-	std::cout << "akcja4";
+	int _polozenieX;
+	int	_polozenieY;
 	while (!czyRuszyl && proba <= 8) {
-		std::cout << "akcja5";
-		switch (kierunek[index])
-		{
-		case 'x':
-			std::cout << "akcja6";
-			if (_polozenieX + ruch < wymiarX && _polozenieX + ruch >= 0)
-			{
-				std::cout << "akcja7";
-				if (this->swiat->czyKolizja(_polozenieX + ruch, _polozenieY) == nullptr)
-				{
-					std::cout << "akcja8";
-					this->polozenieX += ruch;
-					std::cout << "akcja9";
-					czyRuszyl = true;
+		std::cout << " akcja_while ";
+		// zaznaczone poprawiæ
+		this->polozenieX == newPolozenieX;
+		this->polozenieY == newPolozenieY;
 
-				} else
-				{
-					przeciwnik = this->swiat->czyKolizja(_polozenieX + ruch, _polozenieY);
-					kolizja(przeciwnik);
-				}
-				
-			}
-			break;
-		case 'y':
-			std::cout << "akcja6";
-			if (_polozenieY + ruch < wymiarY && _polozenieY + ruch >= 0)
-			{
-				std::cout << "akcja7";
-				if (this->swiat->czyKolizja(_polozenieX, _polozenieY + ruch) == nullptr)
-				{
-					std::cout << "akcja8";
-					this->polozenieY += ruch;
-					std::cout << "akcja9";
-					czyRuszyl = true;
-				}
-				else
-				{
-					przeciwnik = this->swiat->czyKolizja(_polozenieX, _polozenieY + ruch);
-					kolizja(przeciwnik);
-				}
-				
-			}
-			break;
+		
+		_polozenieX = getNewPolozenieX();
+		std::cout << _polozenieX;
+		_polozenieY = getNewPolozenieY();
+
+		std::cout << _polozenieY;
+		// dot¹d poprawki
+
+		if (this->swiat->czyKolizja(_polozenieX, _polozenieY) == nullptr)
+		{
+			std::cout << "akcja_while_if ";
+			this->polozenieX = _polozenieX;
+			this->polozenieY = _polozenieY;
+			czyRuszyl = true;
 		}
-		czasZycia++;
+		else if (this->swiat->czyKolizja(_polozenieX, _polozenieY) != nullptr)
+		{
+			std::cout << "akcja_while_else ";
+			przeciwnik = this->swiat->czyKolizja(_polozenieX, _polozenieY);
+			kolizja(przeciwnik);
+		}
+		else
+		{
+			this->pozycjaNastepnegoRuchu(wymiarX, wymiarY);
+		}
 		proba++;
+		std::cout << "akcja_while_koniec ";
 	}
+	czasZycia++;
+	std::cout << " akcja_stop ";
 }
 
 bool Zwierze::kolizja(Organizm* przeciwnik)
